@@ -34,7 +34,7 @@ fn run_with_d(){
 
 // testing with 61-70
 #[test]
-fn run_with_score_c(){
+fn run_with_c(){
     let mark = "65";
     Command::cargo_bin("scores").unwrap()
         .arg(mark).assert().success().stdout("Grade: C\n");
